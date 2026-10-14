@@ -103,7 +103,7 @@ img{max-width:100%;height:auto;display:block}
 .tk-in span{padding:0 26px}
 .tk:hover .tk-in{animation-play-state:paused}
 @keyframes tk{to{transform:translateX(-50%)}}
-.h-bl{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.h-bl{display:none}
 .h-bl1{width:340px;height:340px;background:rgba(197,168,128,.20);top:-120px;right:-100px}
 .h-bl2{width:300px;height:300px;background:rgba(58,92,150,.35);bottom:-80px;left:-60px}
 .h .w{max-width:none;margin:0;padding-left:clamp(16px,4vw,72px);padding-right:var(--s4)}
@@ -225,12 +225,12 @@ section{content-visibility:auto;contain:layout style paint}
 .ck{position:fixed;bottom:0;left:0;right:0;background:var(--sf);border-top:1px solid var(--bd);padding:var(--s2) var(--s4);display:flex;align-items:center;justify-content:space-between;gap:var(--s3);z-index:1150;transform:translateY(110%);transition:transform 400ms var(--e1);font-size:14px}
 .ck.v{transform:translateY(0)}
 .ck a{color:var(--ad)}
-.rv{opacity:0;transform:translateY(30px);filter:blur(8px);transition:opacity var(--d2) var(--e1),transform var(--d2) var(--e1),filter var(--d2) var(--e1)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity var(--d2) var(--e1),transform var(--d2) var(--e1)}
 .rv.in{opacity:1;transform:none;filter:none}
 .gs-live .rv,.gs-live .rv-l,.gs-live .rv-r,.gs-live .rv-s{transition:none!important}
-.rv-l{opacity:0;transform:translateX(-36px);filter:blur(6px);transition:opacity var(--d2) var(--e1),transform var(--d2) var(--e1),filter var(--d2) var(--e1)}
+.rv-l{opacity:0;transform:translateX(-36px);transition:opacity var(--d2) var(--e1),transform var(--d2) var(--e1)}
 .rv-l.in{opacity:1;transform:none;filter:none}
-.rv-r{opacity:0;transform:translateX(36px);filter:blur(6px);transition:opacity var(--d3) var(--e1),transform var(--d3) var(--e1),filter var(--d3) var(--e1)}
+.rv-r{opacity:0;transform:translateX(36px);transition:opacity var(--d3) var(--e1),transform var(--d3) var(--e1)}
 .rv-r.in{opacity:1;transform:none;filter:none}
 .rv-s{opacity:0;transform:scale(.96);transition:opacity var(--d1) var(--e2),transform var(--d1) var(--e2)}
 .rv-s.in{opacity:1;transform:scale(1)}
