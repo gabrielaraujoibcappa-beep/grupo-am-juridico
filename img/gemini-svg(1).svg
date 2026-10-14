@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente Ouro Clássico Luxo -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4E0A6" />
+      <stop offset="25%" stop-color="#D5B263" />
+      <stop offset="50%" stop-color="#AA8232" />
+      <stop offset="75%" stop-color="#DFC076" />
+      <stop offset="100%" stop-color="#8C651D" />
+    </linearGradient>
+
+    <!-- Sombra Suave para Destaque em Qualquer Fundo -->
+    <filter id="luxuryGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Estilo Base dos Traços -->
+    <style>
+      .monogram-line {
+        fill: none;
+        stroke: url(#goldGrad);
+        stroke-width: 8.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .monogram-thin {
+        fill: none;
+        stroke: url(#goldGrad);
+        stroke-width: 6.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Grupo Principal (Sem Retângulo de Fundo) -->
+  <g filter="url(#luxuryGlow)">
+
+    <!-- 1. ARCOS GÓTICOS INTERNOS E MONOGRAMA 'A' -->
+    <!-- Arco Duplo Esquerdo -->
+    <path class="monogram-thin" d="M 202,360 L 202,248 C 202,212 232,190 232,190 C 232,190 262,212 262,248 L 262,372" />
+    <!-- Arco Duplo Direito -->
+    <path class="monogram-thin" d="M 298,360 L 298,248 C 298,212 268,190 268,190 C 268,190 238,212 238,248 L 238,372" />
+    <!-- Travessão Central do 'A' -->
+    <line class="monogram-thin" x1="238" y1="258" x2="262" y2="258" />
+
+    <!-- 2. ESCUDO INTERNO E LAÇOS SUPERIORES -->
+    <!-- Lado Esquerdo -->
+    <path class="monogram-line" d="M 250,378 
+      C 210,368 168,305 168,225 
+      C 168,155 225,138 228,162 
+      C 231,182 200,180 190,152 
+      C 182,130 220,118 250,100" />
+
+    <!-- Lado Direito (Simétrico) -->
+    <path class="monogram-line" d="M 250,378 
+      C 290,368 332,305 332,225 
+      C 332,155 275,138 272,162 
+      C 269,182 300,180 310,152 
+      C 318,130 280,118 250,100" />
+
+    <!-- 3. LAÇO DA COROA SUPERIOR (TOPO) -->
+    <path class="monogram-line" d="M 250,100 
+      C 226,86 232,58 250,58 
+      C 268,58 274,86 250,100 Z" />
+
+    <!-- 4. ESCUDO EXTERNO E VOLUTAS (ESPIRAIS) SUPERIORES -->
+    <!-- Voluta Superior Esquerda + Arco Externo Esquerdo -->
+    <path class="monogram-line" d="M 190,152 
+      C 162,108 112,115 112,155 
+      C 112,178 138,180 138,162 
+      C 138,150 126,150 124,156" />
+
+    <path class="monogram-line" d="M 178,136 
+      C 150,155 144,195 144,230 
+      C 144,312 195,375 250,395" />
+
+    <!-- Voluta Superior Direita + Arco Externo Direito -->
+    <path class="monogram-line" d="M 310,152 
+      C 338,108 388,115 388,155 
+      C 388,178 362,180 362,162 
+      C 362,150 374,150 376,156" />
+
+    <path class="monogram-line" d="M 322,136 
+      C 350,155 356,195 356,230 
+      C 356,312 305,375 250,395" />
+
+    <!-- 5. ORNAMENTO DA BASE E VOLUTAS INFERIORES -->
+    <!-- Voluta Inferior Esquerda -->
+    <path class="monogram-line" d="M 250,378 
+      C 215,378 168,365 168,395 
+      C 168,412 188,412 188,398 
+      C 188,390 180,390 178,394" />
+
+    <!-- Voluta Inferior Direita -->
+    <path class="monogram-line" d="M 250,378 
+      C 285,378 332,365 332,395 
+      C 332,412 312,412 312,398 
+      C 312,390 320,390 322,394" />
+
+    <!-- Gota / Ponta Inferior Central -->
+    <path class="monogram-line" d="M 250,378 
+      C 226,395 232,425 250,442 
+      C 268,425 274,395 250,378 Z" />
+
+  </g>
+</svg>

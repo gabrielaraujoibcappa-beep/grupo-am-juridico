@@ -1,0 +1,13 @@
+project: grupo-am-juridico
+phase: quality_complete
+audit_complete: true
+tokens_extracted: true
+components_built: [AmButton, FaqAccordion]
+atomic_levels:
+  atoms: [AmButton]
+  molecules: [FaqAccordion]
+accessibility_score: 100
+wcag_level: AA
+roi: {invested_h: 2, saves_h_month: 8-12, payback: 1 campanha}
+current_phase: quality
+workflow_type: brownfield

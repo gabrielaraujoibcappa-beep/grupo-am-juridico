@@ -1,0 +1,13 @@
+project: grupo-am-juridico
+phase: audit_complete
+audit_complete: true
+patterns_inventory:
+  buttons: 4 patterns / 14 instances
+  colors: 42 hex (majority in :root tokens, consumption via var())
+  spacing: scale 8-96 ok
+  typography: 2 families ok
+  forms: 0 (WhatsApp externo — correto)
+next: consolidate/tokenize
+agent_history:
+  - 2026-10-14 Phase1 research/wireframe/spec done
+  - 2026-10-14 Phase2 audit done

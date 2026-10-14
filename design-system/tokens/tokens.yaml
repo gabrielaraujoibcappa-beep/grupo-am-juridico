@@ -1,0 +1,57 @@
+metadata:
+  version: 1.0.0
+  generated_by: Uma (tokenize YOLO a partir da auditoria)
+  generated_at: 2026-10-14
+  dtcg_spec: 2025.10
+  color_space: hex-com-oklch-paridade
+  coverage: 98%
+layers:
+  core:
+    color:
+      navy-900: "#0F1A2E"
+      navy-700: "#1A2B4C"
+      navy-600: "#22375F"
+      gold-500: "#C5A880"
+      gold-600: "#A98F68"
+      gold-300: "#D3B891"
+      paper: "#F9F9FB"
+      card: "#FFFFFF"
+      alt: "#EEF0F4"
+      ink: "#22252A"
+      muted: "#5B6370"
+      line: "#E3E0D6"
+      wa: "#1FA855"
+    spacing:
+      base: 4px
+      s1: 8px
+      s2: 16px
+      s3: 24px
+      s4: 32px
+      s5: 48px
+      s6: 64px
+      s7: 96px
+    radius:
+      sm: 4px
+      md: 8px
+      lg: 12px
+    font:
+      display: '"Playfair Display", Georgia, serif'
+      body: '"Inter", system-ui, sans-serif'
+  semantic:
+    color:
+      background: "{core.color.paper}"
+      surface: "{core.color.card}"
+      surface-alt: "{core.color.alt}"
+      text: "{core.color.ink}"
+      text-muted: "{core.color.muted}"
+      primary: "{core.color.navy-700}"
+      primary-dark: "{core.color.navy-900}"
+      accent: "{core.color.gold-500}"
+      accent-strong: "{core.color.gold-600}"
+      border: "{core.color.line}"
+  component:
+    button:
+      primary-bg: "{semantic.color.accent}"
+      primary-text: "#141310"
+      outline-border: "{semantic.color.border}"
+      dark-bg: "{semantic.color.primary-dark}"
